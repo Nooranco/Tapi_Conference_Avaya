@@ -31,12 +31,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxLine = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxNumber = new System.Windows.Forms.TextBox();
+            this.txtPhone1 = new System.Windows.Forms.TextBox();
             this.buttonDial = new System.Windows.Forms.Button();
             this.listBoxLog = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPhone2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnConf = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -69,24 +68,24 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "شماره تماس:";
             // 
-            // textBoxNumber
+            // txtPhone1
             // 
-            this.textBoxNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPhone1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxNumber.Location = new System.Drawing.Point(134, 52);
-            this.textBoxNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxNumber.Name = "textBoxNumber";
-            this.textBoxNumber.Size = new System.Drawing.Size(618, 23);
-            this.textBoxNumber.TabIndex = 5;
+            this.txtPhone1.Location = new System.Drawing.Point(134, 52);
+            this.txtPhone1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPhone1.Name = "txtPhone1";
+            this.txtPhone1.Size = new System.Drawing.Size(618, 23);
+            this.txtPhone1.TabIndex = 5;
             // 
             // buttonDial
             // 
             this.buttonDial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDial.AutoSize = true;
-            this.buttonDial.Location = new System.Drawing.Point(760, 45);
+            this.buttonDial.Location = new System.Drawing.Point(761, 52);
             this.buttonDial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonDial.Name = "buttonDial";
-            this.buttonDial.Size = new System.Drawing.Size(106, 36);
+            this.buttonDial.Size = new System.Drawing.Size(106, 67);
             this.buttonDial.TabIndex = 6;
             this.buttonDial.Text = "شماره گیری";
             this.buttonDial.UseVisualStyleBackColor = true;
@@ -109,15 +108,15 @@
             this.listBoxLog.Size = new System.Drawing.Size(850, 340);
             this.listBoxLog.TabIndex = 7;
             // 
-            // textBox1
+            // txtPhone2
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPhone2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(136, 96);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(618, 23);
-            this.textBox1.TabIndex = 8;
+            this.txtPhone2.Location = new System.Drawing.Point(136, 96);
+            this.txtPhone2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPhone2.Name = "txtPhone2";
+            this.txtPhone2.Size = new System.Drawing.Size(618, 23);
+            this.txtPhone2.TabIndex = 8;
             // 
             // label4
             // 
@@ -128,30 +127,16 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "شماره تماس:";
             // 
-            // btnConf
-            // 
-            this.btnConf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConf.AutoSize = true;
-            this.btnConf.Location = new System.Drawing.Point(760, 89);
-            this.btnConf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnConf.Name = "btnConf";
-            this.btnConf.Size = new System.Drawing.Size(106, 36);
-            this.btnConf.TabIndex = 10;
-            this.btnConf.Text = "کنفرانس";
-            this.btnConf.UseVisualStyleBackColor = true;
-            this.btnConf.Click += new System.EventHandler(this.button1_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 491);
-            this.Controls.Add(this.btnConf);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPhone2);
             this.Controls.Add(this.listBoxLog);
             this.Controls.Add(this.buttonDial);
-            this.Controls.Add(this.textBoxNumber);
+            this.Controls.Add(this.txtPhone1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxLine);
             this.Controls.Add(this.label2);
@@ -171,12 +156,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBoxLine;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxNumber;
+        private System.Windows.Forms.TextBox txtPhone1;
         private System.Windows.Forms.Button buttonDial;
         private System.Windows.Forms.ListBox listBoxLog;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPhone2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnConf;
     }
 }
 
