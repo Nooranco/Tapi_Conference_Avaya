@@ -10,11 +10,23 @@ namespace OutgoingCalls
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.ThreadException += (s, e) => { Application.Exit(); };
+
+            if (args.Length > 0)
+            {
+                Application.Run(new frmMain(
+                    args[0].ToString(), 
+                    args[1].ToString(), 
+                    args[2].ToString()));
+            }
+            else
+            {
+                Application.Run(new frmMain());
+            }
         }
     }
 }

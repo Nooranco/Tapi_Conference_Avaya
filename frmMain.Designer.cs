@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxLine = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.listBoxLog = new System.Windows.Forms.ListBox();
             this.txtPhone2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label2
@@ -43,14 +45,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 16);
+            this.label2.Size = new System.Drawing.Size(106, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "خط مورد استفاده:";
             // 
             // comboBoxLine
             // 
-            this.comboBoxLine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxLine.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxLine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLine.FormattingEnabled = true;
             this.comboBoxLine.Location = new System.Drawing.Point(134, 13);
@@ -64,14 +65,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(36, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 16);
+            this.label3.Size = new System.Drawing.Size(84, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "شماره تماس:";
             // 
             // txtPhone1
             // 
-            this.txtPhone1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhone1.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhone1.Location = new System.Drawing.Point(134, 52);
             this.txtPhone1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone1.Name = "txtPhone1";
@@ -80,28 +80,24 @@
             // 
             // buttonDial
             // 
-            this.buttonDial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDial.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDial.AutoSize = true;
             this.buttonDial.Location = new System.Drawing.Point(761, 52);
             this.buttonDial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonDial.Name = "buttonDial";
             this.buttonDial.Size = new System.Drawing.Size(106, 67);
             this.buttonDial.TabIndex = 6;
-            this.buttonDial.Text = "شماره گیری";
+            this.buttonDial.Text = "برقراری کنفرانس";
             this.buttonDial.UseVisualStyleBackColor = true;
             this.buttonDial.Click += new System.EventHandler(this.buttonDial_Click);
             // 
             // listBoxLog
             // 
-            this.listBoxLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBoxLog.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxLog.FormattingEnabled = true;
             this.listBoxLog.HorizontalScrollbar = true;
             this.listBoxLog.ItemHeight = 16;
-            this.listBoxLog.Items.AddRange(new object[] {
-            "برای برقراری تماس خروجی یک خط را انتخاب کنید ، یک شماره را وارد کنید و روی شماره " +
-                "گیری کلیک کنید."});
+            this.listBoxLog.Items.AddRange(new object[] {"برای برقراری تماس خروجی یک خط را انتخاب کنید ، یک شماره را وارد کنید و روی شماره " + "گیری کلیک کنید."});
             this.listBoxLog.Location = new System.Drawing.Point(17, 135);
             this.listBoxLog.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBoxLog.Name = "listBoxLog";
@@ -110,8 +106,7 @@
             // 
             // txtPhone2
             // 
-            this.txtPhone2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhone2.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhone2.Location = new System.Drawing.Point(136, 96);
             this.txtPhone2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone2.Name = "txtPhone2";
@@ -123,9 +118,15 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(36, 99);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 16);
+            this.label4.Size = new System.Drawing.Size(84, 16);
             this.label4.TabIndex = 9;
             this.label4.Text = "شماره تماس:";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmMain
             // 
@@ -140,7 +141,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxLine);
             this.Controls.Add(this.label2);
-            this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (178)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmMain";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -149,7 +150,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -161,6 +161,7 @@
         private System.Windows.Forms.ListBox listBoxLog;
         private System.Windows.Forms.TextBox txtPhone2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

@@ -54,9 +54,11 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Traysoft.AddTapi, Version=5.1.0.41119, Culture=neutral, PublicKeyToken=36126db033de9077, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Traysoft.AddTapi.dll</HintPath>
+    <Reference Include="Traysoft.AddTapi, Version=5.1.0.41119, Culture=neutral, PublicKeyToken=null">
+      <HintPath>C:\AddTapi\Traysoft.AddTapi.dll</HintPath>
+    </Reference>
+    <Reference Include="Traysoft.Internal, Version=5.1.0.41011, Culture=neutral, PublicKeyToken=36126db033de9077">
+      <HintPath>C:\AddTapi\Traysoft.Internal.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
