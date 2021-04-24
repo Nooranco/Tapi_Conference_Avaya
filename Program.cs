@@ -18,10 +18,19 @@ namespace OutgoingCalls
 
             if (args.Length > 0)
             {
-                Application.Run(new frmMain(
-                    args[0].ToString(), 
-                    args[1].ToString(), 
-                    args[2].ToString()));
+                if (args.Length == 3)
+                {
+                    Application.Run(new frmMain(
+                   args[0].ToString(),
+                   args[1].ToString(),
+                   args[2].ToString()));
+                }
+                else
+                {
+                    Application.Run(new frmMain(
+                   args[0].ToString(),
+                   args[1].ToString()));
+                }
             }
             else
             {
